@@ -25,7 +25,6 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #000;
 }
 
 /*.video-container .poster img {
@@ -37,7 +36,6 @@ body {
 .video-container .filter {
     z-index: 100;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 
@@ -52,9 +50,7 @@ body {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ 
 }
 
 .btn {
@@ -99,5 +95,12 @@ a:hover {
     width: 12vw;
     position: relative;
     bottom: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        height: 16vh;
+        width: 12vw;
+    }
 }
 
