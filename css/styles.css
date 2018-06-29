@@ -3,7 +3,8 @@
 
 
 body {
-    overflow: hidden; 
+    /* overflow: hidden;  */
+    overflow-x: hidden;
 }
 
 /* Landing Page */
@@ -89,7 +90,7 @@ body {
 .up:before {
     display: inline;
     position: relative;
-    top: 92vh;
+    top: 93vh;
     left: 92vw;
     z-index: 5;
     color: white;
@@ -120,9 +121,8 @@ body {
 
 /* Biography Page */
 #bioPage{
-    height: 100vh;
+    height: auto;
     width: 100vw;
-    display: block;
     background: #333;
 }
 
@@ -136,12 +136,64 @@ body {
     width: 10vw;
 }
 
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1vw;
+    margin-top: 3vh;
+    position: relative;
+    left: 25vw;
+}
+
+#bole,#ivan,#darko{
+    height: 60vh;
+    width: 33vw;
+}
+
+#bole{
+    
+}
+.boleImage{
+    height: 17vh;
+    width: 17vw;
+    position: relative;
+    left: 10vw;
+    border-radius: 50%;
+}
+
+
+#ivan{
+    
+}
+
+#darko{
+    
+}
 
 /* Responsivness */
-@media only screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .logo {
         height: 16vh;
         width: 12vw;
     }
-}
+} */
 
+
+@media screen and (min-width: 750px){
+    #wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        left: -2vw;
+        height: 100vh;
+    }
+
+    #bole,#ivan,#darko{
+        height: 80vh;
+        width: 33vw;
+    }
+
+    #ivan{
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+    }
+}
