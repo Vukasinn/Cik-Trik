@@ -113,11 +113,7 @@ body {
     transition: 3s;
 }
 
-.fas{
-    height: 10vh;
-    width: 10vw;
-    z-index: 12;
-}
+
 
 /* Biography Page */
 #bioPage{
@@ -157,10 +153,9 @@ body {
     height: 17vh;
     width: 17vw;
     position: relative;
-    left: 10vw;
+    left: 8vw;
     border-radius: 50%;
 }
-
 
 #ivan{
     
@@ -168,6 +163,26 @@ body {
 
 #darko{
     
+}
+
+#ivanBio,#darkoBio,#boleBio{
+    text-align: center;
+    color: white;
+    margin-top: 5vh;
+}
+
+.kontakt{
+    margin-top: 5vw;
+}
+
+.fab:before{
+    padding: 1vw;
+    font-size: 2vh;
+}
+
+.fa-mobile:before{
+    padding: 1vw;
+    font-size: 2vh;
 }
 
 /* Responsivness */
@@ -185,6 +200,10 @@ body {
         position: relative;
         left: -2vw;
         height: 100vh;
+    }
+    #boleBio{
+        position: relative;
+        left: 1vw;
     }
 
     #bole,#ivan,#darko{
